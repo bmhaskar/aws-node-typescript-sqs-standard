@@ -1,4 +1,6 @@
 <!--
+Original source: 
+
 title: 'AWS SQS Standard Example (NodeJS & Typescript)'
 description: 'This example demonstrates how to setup a SQS with Typescript.'
 layout: Doc
@@ -9,6 +11,7 @@ authorLink: 'https://github.com/jmpfrazao'
 authorName: 'Miguel Frazao'
 authorAvatar: 'https://avatars3.githubusercontent.com/u/28927258?s=460&v=4'
 -->
+
 # Simple SQS Standard Example
 
 This example demonstrates how to setup a SQS Standard and send messages through the message body and attributes.
@@ -24,4 +27,6 @@ This example demonstrates how to setup a SQS Standard and send messages through 
 - To print out the logs of the receiver sqs handler on the terminal
   `sls logs -f receiver -t`
 
-- send a HTTP POST request to the sender lambda with a JSON payload
+## Modifications
+- It includes the `nest` framework integration for handling messages 
+- It has sample SMS service which is created and injected from `nest` intended to show SMS sending service working on demand basis. 
